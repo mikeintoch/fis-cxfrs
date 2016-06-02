@@ -241,6 +241,7 @@
             <feature>http</feature>
             <feature>cxf-specs</feature>
             <feature>swagger2</feature>
+            <feature>camel-cxf</feature>
           </startupFeatures>
           <startupBundles>
             <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
