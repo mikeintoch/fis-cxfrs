@@ -82,29 +82,29 @@
 		</dependency>
 
 		<dependency>
-			<groupid>org.ow2.asm</groupid>
+			<groupId>org.ow2.asm</groupId>
 			<artifactid>asm-all</artifactid>
 			<version>4.1</version>
 		</dependency>
 		<dependency>
-			<groupid>org.apache.camel</groupid>
+			<groupId>org.apache.camel</groupId>
 			<artifactid>camel-core</artifactid>
 		</dependency>
 		<dependency>
-			<groupid>org.apache.camel</groupid>
+			<groupId>org.apache.camel</groupId>
 			<artifactid>camel-blueprint</artifactid>
 		</dependency>
 		<dependency>
-			<groupid>org.apache.camel</groupid>
+			<groupId>org.apache.camel</groupId>
 			<artifactid>camel-jaxb</artifactid>
 		</dependency>
 		<dependency>
-			<groupid>org.apache.camel</groupid>
+			<groupId>org.apache.camel</groupId>
 			<artifactid>camel-jackson</artifactid>
 		</dependency>
 
 		<dependency>
-			<groupid>org.apache.camel</groupid>
+			<groupId>org.apache.camel</groupId>
 			<artifactid>camel-http4</artifactid>
 		</dependency>
 
@@ -188,29 +188,6 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.9.1</version>
-				<executions>
-					<execution>
-						<id>attach-artifacts</id>
-						<phase>package</phase>
-						<goals>
-							<goal>attach-artifact</goal>
-						</goals>
-						<configuration>
-							<artifacts>
-								<artifact>
-									<file>${project.build.outputDirectory}/features.xml</file>
-									<classifier>features</classifier>
-									<type>xml</type>
-								</artifact>
-							</artifacts>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
 				<artifactId>maven-install-plugin</artifactId>
 				<version>2.5.2</version>
 				<executions>
@@ -260,6 +237,7 @@
 						<feature>cxf-http-jetty</feature>
 						<feature>http</feature>
 						<feature>cxf-specs</feature>
+						<features>camel-cxf</features>
 						<feature>swagger2</feature>
 					</startupFeatures>
 					<startupBundles>
