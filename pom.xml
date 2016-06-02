@@ -83,29 +83,29 @@
 
 		<dependency>
 			<groupId>org.ow2.asm</groupId>
-			<artifactid>asm-all</artifactid>
+			<artifactId>asm-all</artifactId>
 			<version>4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
-			<artifactid>camel-core</artifactid>
+			<artifactId>camel-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
-			<artifactid>camel-blueprint</artifactid>
+			<artifactId>camel-blueprint</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
-			<artifactid>camel-jaxb</artifactid>
+			<artifactId>camel-jaxb</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
-			<artifactid>camel-jackson</artifactid>
+			<artifactId>camel-jackson</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.camel</groupId>
-			<artifactid>camel-http4</artifactid>
+			<artifactId>camel-http4</artifactId>
 		</dependency>
 
 
