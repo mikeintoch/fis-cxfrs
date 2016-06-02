@@ -3,10 +3,9 @@
     xmlns:cxf="http://cxf.apache.org/blueprint/core"
     xmlns:jaxrs="http://cxf.apache.org/blueprint/jaxrs"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="       http://www.osgi.org/xmlns/blueprint/v1.0.0 https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd       http://cxf.apache.org/blueprint/jaxrs http://cxf.apache.org/schemas/blueprint/jaxrs.xsd       http://cxf.apache.org/blueprint/core http://cxf.apache.org/schemas/blueprint/core.xsd">
-    
-     <cxf:cxfendpoint address="http://localhost:9191/cxf/claim" id="claimEndpoint" serviceclass="com.redhat.demo.ClaimService"/>
-  <bean class="com.redhat.demo.ClaimProcessor" id="claimProcessor"/>
-    
+    <cxf:cxfendpoint address="http://localhost:9191/cxf/claim"
+        id="claimEndpoint" serviceclass="com.redhat.demo.ClaimService"/>
+    <bean class="com.redhat.demo.ClaimProcessor" id="claimProcessor"/>
     <camelContext id="camelContext-be99cfc2-6d7f-4960-8416-8e6c89dfb9da"
         trace="false" xmlns="http://camel.apache.org/schema/blueprint">
         <route id="cxfRoute">
